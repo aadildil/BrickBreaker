@@ -1,0 +1,26 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.brick_breaker;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+/**
+ *
+ */
+public class Brick_Breaker {
+    public static void main(String[] args) {
+        JFrame obj=new JFrame();
+        GamePlay gp=new GamePlay();
+        
+        obj.setBounds(10,10,700,600);
+        obj.setTitle("Brick Breaker Game");
+        obj.setResizable(false);
+        ImageIcon ima=new ImageIcon("C:\\Users\\shabaka computers\\Documents\\NetBeansProjects\\Brick_Breaker\\src\\main\\java\\com\\mycompany\\brick_breaker\\ico.png");
+        obj.setIconImage(ima.getImage());
+        obj.setVisible(true);
+        obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        obj.add(gp);
+        
+    }
+}
